@@ -1,0 +1,65 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 1000px;
+	margin: 5px;
+}
+
+.header {
+	margin: 5px;
+	padding: 10px;
+	background-color: aqua;
+	height: 80px;
+}
+
+.nav {
+	padding: 10px;
+	margin: 5px;
+	height: 80px;
+	background-color: tomato;
+}
+
+.main {
+	position: relative;
+	margin: 5px;
+	padding: 50px;
+	height: 250px;
+	background-color: wheat;
+}
+
+.aside {
+	position: absolute;
+	height: 80px;
+	width: 300px;
+	padding: 10px;
+	background-color: yellowgreen;
+}
+
+.article-back {
+	position: absolute;
+	width: 500px;
+	margin-left: 370px;
+	padding: 10px;
+	height: 230px;
+	background-color: orchid;
+}
+
+.article {
+	position: inherit;
+	width: 450px;
+	padding: 10px;
+	margin: 15px;
+	margin-top: 60px;
+	height: 80px;
+	background-color: royalblue;
+}
+
+.footer {
+	margin: 5px;
+	padding: 10px;
+	height: 80px;
+	background-color: aquamarine;
+}

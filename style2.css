@@ -1,0 +1,15 @@
+table {
+	width: fixed;
+	border: 1px solid #DCDCDC;
+	table-layout: fixed;
+}
+
+.first {
+	background-color: #DCDCDC;
+	font-weight: 700;
+	text-align: center;
+}
+
+.nth-stud {
+	background-color:  #9DDA00;
+}
