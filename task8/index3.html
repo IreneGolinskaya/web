@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#code
+{
+background-color:#fffDBD;
+margin:10px;
+padding:5px;
+}
+#wrap1{
+height:200px;
+width:300px;
+background-color:#6A5ACD;
+float:left;
+margin:20px;
+}
+#wrap2{
+position:relative;
+height:100px;
+width:100px;
+background-color:#FF0000;
+float:left;
+}
+</style>  
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+$(document).ready(function(){
+	$("#but1").click(function(){
+     $("#par1").hide();
+	 });
+	 $("#but2").click(function(){
+     $("#par1").show();
+	 });
+	 $("#par2").animate({opacity:'1.0'},3000);
+	 $("#par2").mouseover(function(){
+	 $("#par2").animate({opacity:'0.3'},3000);
+	 });
+	 $("#par2").mouseout(function(){
+	 $("#par2").animate({opacity:'1.0'},3000);
+	 });
+	 $("#but3").click(function(){
+     $("#wrap1").animate({height:'0'},5000);
+	 });
+	 $("#but4").click(function(){
+     $("#wrap1").animate({height:'200'},7000);
+	 });
+	 $("#but5").click(function(e){
+     $("#wrap2").animate({top:205, left:15},1000);
+	 $("#wrap2").animate({top:405, left:105},1000);
+	 $("#wrap2").animate({top:505, left:305},1000);
+	 $("#wrap2").animate({top:205, left:305},1000);
+	 $("#wrap2").animate({top:55, left:105},1000);
+	 });
+});
+
+</script>  
+</head>
+<body> 
+<p><b> ......</b></p>
+<div id="code">
+<h3 id="par1">Я первый заголовок на странице.</h3>
+<p id="par2">Я второй абзац на странице.</p>
+<input id="but1" type="button" value="1" />
+<input id="but2" type="button" value="2" />
+<input id="but3" type="button" value="3" />
+<input id="but4" type="button" value="4" />
+<input id="but5" type="button" value="5" />
+</div>
+<p><b>.........</b></p>
+<div id="code">
+<a id="href1" href="http://kneu.edu.ua/">kneu </a>
+</div>
+<div id="wrap1">
+</div>
+<div id="wrap2">
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#code
+{
+background-color:#fffDBD;
+margin:10px;
+padding:5px;
+}
+</style>  
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+   $("#but1").click(function(event){
+     var par1=document.getElementById('par1');
+	 par1.style.cssText="color:red; font-size:20px; font-family: Verdana";
+	 });
+   $("a").mouseover(function(){$("a").css("color","#FFA500")})
+	$("a").mouseout(function(){$("a").css("color","#000000")})
+});
+</script>  
+</head>
+<body> 
+<p><b> ......</b></p>
+<div id="code">
+<h3 id="par1">Я первый заголовок на странице.</h3>
+<p id="par1">Я первый абзац на странице.</p>
+<input id="but1" type="button" value="Нажмите на меня" />
+</div>
+<p><b>.........</b></p>
+<div id="code">
+<a id="href1" href="http://kneu.edu.ua/">kneu </a>
+</div>    
+</body>
+</html>
