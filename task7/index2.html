@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+  <div>
+<p>Користувачі </p>
+<p> люблять </p>
+<p>JavaScript </p>
+</div>
+<img  src="images/logo1.png" width="255" height="255" alt="logo"><br>
+<input type="submit" value="Запустить скрипт" onClick="button()" />
+<script>
+	function button ()
+	{
+		var p=document.getElementsByTagName('P');
+		for (i=0; i<p.length;i++)
+			{
+				p[i].innerHTML="А може й і не люблять";
+				p[i].style.cssText="align:center";
+			}
+		var img=document.getElementsByTagName('IMG');
+		for (i=0; i<img.length;i++)
+			{
+		var att=img[i].setAttribute("width","_300");
+			}
+	}
+</script>
+</body>
+</html>

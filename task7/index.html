@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      </header>
+      <div class="row">
+        <div id="n1" class="col-xs-8">
+         <h1></h1>
+         <p></p>
+         <h2></h2>
+         <p></p>
+         <h2></h2>
+         <p></p>         
+        </div>
+        <div class="col-xs-4">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <footer><p>Пророблено мною </p></footer>
+	<script type="text/javascript">
+	function button ()
+	{
+		var div = document.getElementsByClassName('col-xs-4');
+		for (i=0; i<div.length;i++)
+		{
+		div[i].style.background="red";
+		}
+		var footer=document.getElementsByTagName('footer');
+		for (i=0; i<footer.length;i++)
+		{
+		footer[i].innerHTML="<em> Голинська </em>";
+		}
+	}
+	</script>
+	<input type="submit" value="Запустити" onClick="button()" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
