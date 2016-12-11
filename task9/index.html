@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>                                                                  
+<head>     
+<style type="text/css">
+#code
+{
+background-color:#fffDBD;
+margin:10px;
+padding:5px;
+}
+#par1
+{
+color:#e40045;
+font-weight:bold;
+font-size:30px;
+}
+#par2
+{
+color:#3714B0;
+font-weight:bold;
+font-size:30px;
+}
+#par3
+{
+color:#FF5F00;
+font-weight:bold;
+font-size:30px;
+}
+</style>
+<script src="js/jquery-3.1.1.min.js"></script>                                                         
+<script type="text/javascript">   
+$(document).ready(function(){
+	$("#but1").click(function(){
+		var element1 = $('#par1').css('color');
+		alert(element1);
+		var element2 = $('#par2').css('color');
+		alert(element2);
+		var element3 = $('#par3').css('color');
+		alert(element3);
+		})
+	$("#but2").click(function(){
+		$('#par4').css('color','#FF0000');
+		$('#par5').css('font-size','25px');
+		$('#par6').css({'font-family':'Verdana','font-size':'33px'});
+		$('#par7').css({'font-family':"'Times New Roman'",'font-size':'33px','color':'#FF0000','font-weight':'900'});
+		})
+});                                 
+</script>                                                          
+</head>
+<body> 
+<div id="code">
+<p id="par1"> Я первый абзац.</p>
+<p id="par2"> Я второй абзац.</p>
+<p id="par3"> Я третий абзац.</p>
+<p> </p>
+<input id="but1" type="button" value="Вывести цвет абзацев" />
+</div>
+<div id="code">
+<p id="par4">Текст этого элемента отображен красным шрифтом.</p>
+<p id="par5">Текст этого элемента отображен шрифтом размером 25 пикселей.</p>
+<p id="par6">Текст этого элемента отображен шрифтом Verdana размером 33 пикселя.</p>
+<p id="par7">Текст этого элемента отображен жирным шрифтом Times New Roman красного цвета размером 27 пикселей.</p>
+<input id="but2" type="button" value="Оформить элементы"/>
+</div>
+</body>
+</html>
